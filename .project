@@ -3,7 +3,7 @@
   <name>iTextKhmerSample</name>
   <comment>NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
   <projects>
-    <project>itextpdf</project>
+    <project>iTextKhmer</project>
   </projects>
   <buildSpec>
     <buildCommand>

@@ -8,14 +8,18 @@
   <name>iTextKhmerSample</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-  	<dependency>
-        <groupId>com.itextpdf</groupId>
-        <artifactId>itextpdf</artifactId>
-        <version>5.5.4-SNAPSHOT</version>
-        <type>jar</type>
-        <scope>system</scope>
-        <systemPath>${basedir}/lib/itextpdf-5.5.4-SNAPSHOT.jar</systemPath>
-    </dependency>
+    <dependency>
+		<groupId>com.itextpdf</groupId>
+		<artifactId>itextpdf</artifactId>
+		<version>5.5.8</version>
+	</dependency>
+	<dependency>
+		<groupId>org.seuksa.itextkhmer</groupId>
+		<artifactId>iTextKhmer</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<scope>system</scope>
+        <systemPath>${basedir}/lib/iTextKhmer-1.0-SNAPSHOT.jar</systemPath>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

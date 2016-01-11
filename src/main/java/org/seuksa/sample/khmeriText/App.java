@@ -3,18 +3,19 @@ package org.seuksa.sample.khmeriText;
 import java.io.File;
 import java.io.FileOutputStream;
 
+import org.seuksa.itextkhmer.KhmerLigaturizer;
+
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfWriter;
-import com.itextpdf.text.pdf.languages.KhmerLigaturizer;
 
 /**
  * Hello Sample Test PDF with iText
  * Website: http://ask.osify.com
- *
+ * See library: https://github.com/seuksa/iTextKhmer
  * @author pongsametrey.sok
  *
  */
