@@ -6,25 +6,53 @@
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>iTextKhmerSample</name>
-  <url>http://maven.apache.org</url>
+  <url>http://ask.osify.com/qa/613</url>
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.7</java.version>
+        <junit.version>3.8.1</junit.version>
+        <itextpdf.version>5.5.8</itextpdf.version>
+        <itextkhmer.version>1.0-SNAPSHOT</itextkhmer.version>
+    </properties>
   <dependencies>
     <dependency>
 		<groupId>com.itextpdf</groupId>
 		<artifactId>itextpdf</artifactId>
-		<version>5.5.8</version>
+		<version>${itextpdf.version}</version>
 	</dependency>
 	<dependency>
 		<groupId>org.seuksa.itextkhmer</groupId>
 		<artifactId>iTextKhmer</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>${itextkhmer.version}</version>
 		<scope>system</scope>
         <systemPath>${basedir}/lib/iTextKhmer-1.0-SNAPSHOT.jar</systemPath>
 	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5.1</version>
+            <configuration>
+                <source>${java.version}</source>
+                <target>${java.version}</target>
+                <encoding>${project.build.sourceEncoding}</encoding>
+                <debug>true</debug>
+                <optimize>true</optimize>
+                <compilerArgs>
+                    <arg>-Xlint:all</arg>
+                </compilerArgs>
+                <showWarnings>true</showWarnings>
+                <showDeprecation>true</showDeprecation>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 </project>
